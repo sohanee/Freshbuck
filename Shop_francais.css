@@ -1,0 +1,233 @@
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 255, 0.747);
+  border-radius: 30px;
+  width: 10px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(127, 255, 212, 0);
+  width: 10px;
+}
+
+::-webkit-scrollbar {
+  background-color: rgba(85, 85, 88, 0.486);
+  border-radius: 30px;
+  width: 10px;
+}
+
+
+body {
+    background-color:#121539;
+    color: white;
+    margin-left: 70px;
+    font-family: "apercu",sans-serif;
+    
+    overflow-x: hidden;
+}
+
+nav {
+    
+  display: flex;
+  flex-direction: column;
+  background-color: #3b3f8b;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 700000;
+  margin: 240px -60px 8px ;
+  padding: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+    
+    
+
+}
+
+#logo2 {
+    font-size: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    cursor: grab;
+    width: 50px;
+    height: 50px;
+    background-color: #453cc5;
+    border-radius: 15px;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+nav a:hover {
+    background-color: rgba(52, 52, 228, 0.459);
+    transition: 300ms;
+}
+
+.pres1,.pres2,.pres3 {
+    padding: 10px;
+    background-color:rgba(255, 255, 255, 0.05);
+    border-radius: 40px;
+    width: 70vw;
+    height: auto;
+    display: flex;
+    z-index: 2;
+    margin: 50px;
+    border: #0400ff solid 0px;
+    transition: border-radius 1s, border 1s;
+    box-shadow: 0 0.75rem 2rem 0 rgb(0 0 0 / 10%);
+
+}
+.pres1:hover,.pres2:hover,.pres3:hover {
+  border-radius: 40px 0 40px 0;
+  border: #0400ff solid 8px;
+  transition: border-radius 1s, border 1s;
+  
+  
+}
+.titre,.titre2,.titre3 {
+  font-family: 'Rowdies', cursive;
+  text-transform : uppercase;
+  font-size: 50px;
+}
+
+
+.pres1 p,.pres2 p,.pres3 p {
+    font-size: 1,6vw;
+    font-family: 'Acme', sans-serif;
+}
+.pres1 h2,.pres2 h2,.pres3 h2 {
+  font-size: 30px;
+  font-family: 'Acme', sans-serif;
+  
+
+
+}
+
+.texte,.texte2,.texte3 {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+
+.france {
+    width: 60px;
+    height: auto;
+    margin-left: 10px;
+  }
+  
+  .amerique {
+    width: 48px;
+    height: auto;
+    padding-right: 10px;
+  }
+  
+  .selection {
+  
+    border-radius: 20px;
+    width: 175px;
+    height: 80px;
+    align-items: center;
+    display: flex;
+  }
+  
+  .select{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  
+  .selection{
+    
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .selection a {
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .selection::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .selection::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+  
+
+  .pres1 img,.pres2 img,.pres3 img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+
+  }
+
+  
+
+  .pres1 button,.pres2 button,.pres3 button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    width: 150px;
+    height: 50px;
+    color:rgb(255, 255, 255); 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 70%;
+    margin-top: 180px;
+   }
+   
+   .pres1 button:hover,.pres2 button:hover,.pres3 button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
